@@ -13,6 +13,11 @@ body{
     background-color: #e6eaeb;
 }
 
+a{
+    text-decoration: none;
+    color: #390081;
+}
+
 .top_bar {
 
     width: 100%; 
@@ -118,6 +123,7 @@ nav a:hover{
     margin-right: 5px;
     border: 1px solid #d3d3d3;
     font-size: 12px;
+    background-color: #dcffff;
 }
 
 textarea:focus {
@@ -148,6 +154,7 @@ textarea:focus {
     font-size: 15px;
     padding: 0px 5px;
     min-height: 75px;
+    cursor: pointer;
 }
 
 .post_profile_pic {
@@ -156,4 +163,58 @@ textarea:focus {
 }
 .post_profile_pic img{
     border-radius: 25px;
+}
+
+#comment_iframe{
+    max-height: 250px;
+    width: 100%;
+    
+}
+
+.comment_section{
+    padding: 0 5px 5px 5px;
+    margin-top: 5px;
+    
+}
+
+.comment_section img{
+    margin: 0 3px 3px 3px;
+    border-radius: 25px;
+}
+
+.comment_section a{
+    text-decoration: none;
+}
+
+#comment_form textarea{
+    border-color: #d3d3d3;
+    width: 85%;
+    border-radius: 5px;
+    color: #616060;
+    font-size: 14px;
+    margin: 3px 3px 3px 5px;
+    background-color: #dcffff;
+
+}
+
+#comment_form input[type="submit"]{
+    border: none;
+    background-color: #20aae5;
+    color: #186588;
+    border-radius: 5px;
+    width: 13%;
+    height: 35px;
+    margin-top: 3px;
+    position: absolute;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    color: #1e75ca;
+    text-shadow: #7386e2 0.5px 0.5px 0px;
+    
+}
+
+.newsfeedPostOptions{
+    padding: 0px;
+    text-decoration: none;
+    color: #000;
+    border: none;
 }
