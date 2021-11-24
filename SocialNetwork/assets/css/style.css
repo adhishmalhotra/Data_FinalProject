@@ -1,3 +1,5 @@
+/*including the font families which we are using*/
+
 @font-face {
     font-family: 'Bellota-LightItalic';
     src: url('../fonts/Bellota-LightItalic.otf');
@@ -8,6 +10,7 @@
     src: url('../fonts/Bellota-BoldItalic.otf');
 }
 
+/*universal tags*/
 body{
     line-height: 17px;
     background-color: #e6eaeb;
@@ -18,6 +21,8 @@ a{
     color: #390081;
 }
 
+
+/*designing the navbar*/
 .top_bar {
 
     width: 100%; 
@@ -73,6 +78,7 @@ nav a:hover{
 
 }
 
+/*designing the columns on the index page (also used in the profile page)*/
 .column {
     background-color: #fff;
     padding: 10px;
@@ -111,6 +117,7 @@ nav a:hover{
     min-height: 160px;
 }
 
+/*designing the posts*/
 .post_form {
     width: 100%
 
@@ -165,6 +172,8 @@ textarea:focus {
     border-radius: 25px;
 }
 
+
+/*designing the comments*/
 #comment_iframe{
     max-height: 250px;
     width: 100%;
@@ -226,7 +235,7 @@ textarea:focus {
 
 }
 
-
+/*designing the likes*/
 .comment_like {
     background-color: transparent;
     border: none;
@@ -241,4 +250,92 @@ textarea:focus {
 .like_value {
     display: inline;
     font-size: 14px;
+}
+
+/*designing the profile*/
+.profile_left{
+    top: -10px;
+    width: 17%;
+    max-width: 240px;
+    min-width: 130px;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: #3780e9;
+    border-right: 10px solid #83d6fe;
+    color: #cbeaf8;
+    margin-right: 20px;
+}
+
+.profile_left img{
+    min-width: 80px;
+    width: 55%;
+    margin: 20px;
+    border: 5px solid #83d6fe;
+    border-radius: 100px;
+    
+}
+
+.profile_info {
+    display: list-item;
+    background-color: #2980b9;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+    margin: 0 0 0 20px;
+    word-wrap: break-word;
+}
+
+.danger {
+    background-color: #e74c3c;
+}
+
+.warning  {
+    background-color: #f0ad4e;
+}
+
+.default {
+    background-color: #bdc3c7;
+}
+.success {
+    background-color: #2ecc71;
+}
+.info {
+    background-color: #3498db;
+}
+.deep_blue {
+    background-color: #0043f0;
+}
+
+.profile_left input[type="submit"] {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 7px 0 7px 0;
+    margin-left: 7px;
+    border: none;
+    color: #fff;
+}
+
+/*Designing the friend request buttons*/
+#accept_button {
+    width: 20%;
+    height: 28px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+#ignore_button {
+    width: 20%;
+    height: 28px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #fff;
+    background-color: #e74c3c;
 }
